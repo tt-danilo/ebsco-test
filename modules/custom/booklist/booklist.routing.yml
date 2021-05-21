@@ -1,0 +1,7 @@
+booklist.page:
+  path: "/booklist"
+  defaults:
+    _controller: Drupal\booklist\Controller\BookListController::booklist
+    _title: "Book List Page"
+  requirements:
+    _permission: "access content"
