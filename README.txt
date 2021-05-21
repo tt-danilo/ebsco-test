@@ -1,21 +1,18 @@
-# Install dependencies and Valet
-`Valet Install`
+# Install dependencies and Valet #
+    Valet Install
 
 # To start application using Laravel Valet
-`Valet Start`
+    Valet Start
 
-# To view website
+# To view website #
 http://ebsco-test.test
 
 To reset cache using Drupal Console.
 To install
-```
-curl https://drupalconsole.com/installer -L -o drupal.phar
-mv drupal.phar /usr/local/bin/drupal
-chmod +x /usr/local/bin/drupal
-```
 
-to Reset cache
-```
-drupal router:rebuild
-```
+    curl https://drupalconsole.com/installer -L -o drupal.phar
+    mv drupal.phar /usr/local/bin/drupal
+    chmod +x /usr/local/bin/drupal
+
+## To Reset cache ##
+    drupal router:rebuild
