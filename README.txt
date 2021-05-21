@@ -1,5 +1,6 @@
 # Install dependencies and Valet #
-    ```Valet Install```
+```Valet Install
+```
 
 # To start application using Laravel Valet
     Valet Start
