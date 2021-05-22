@@ -27,12 +27,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '6f37b642578444b29133c7b3486382d809a3892d',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -702,12 +702,12 @@ private static $installed = array (
     ),
     'drupal/legacy-project' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '6f37b642578444b29133c7b3486382d809a3892d',
     ),
     'drupal/link' => 
     array (
@@ -855,6 +855,15 @@ private static $installed = array (
       array (
         0 => '9.1.8',
       ),
+    ),
+    'drupal/scss_compiler' => 
+    array (
+      'pretty_version' => '1.1.0',
+      'version' => '1.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.1',
     ),
     'drupal/search' => 
     array (
@@ -1247,6 +1256,15 @@ private static $installed = array (
       array (
         0 => 'v1.10.10',
       ),
+    ),
+    'scssphp/scssphp' => 
+    array (
+      'pretty_version' => 'v1.5.2',
+      'version' => '1.5.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '6fe16f169f55f5e793474fb210aac0a4481619e5',
     ),
     'shama/baton' => 
     array (

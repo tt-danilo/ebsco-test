@@ -1,0 +1,18 @@
+{{ attach_library('books/books') }}
+
+<div class="container">
+  <div class="filter-container">
+    <input class="search-input"/>
+      <select class="select-input">
+      <option value="card">Card</option>
+      <option value="list">List</option>
+    </select>
+
+  </div>
+
+  <div class="card">
+  {% for article in items %}
+    <div class="card-item" >{{ article.name }}</div>
+  {% endfor %}
+  </div>
+</div>

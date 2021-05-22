@@ -1,0 +1,7 @@
+books:
+  css:
+    theme:
+      css/books.module.css: { minified: true }
+  dependencies:
+    - core/jquery
+    - core/drupal
