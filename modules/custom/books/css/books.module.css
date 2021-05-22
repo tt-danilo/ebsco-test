@@ -1,8 +1,12 @@
 /* Mobile First */
-.card {
+.card-view {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
+}
+
+.list-view {
+  width: 100%;
 }
 
 .card-item {

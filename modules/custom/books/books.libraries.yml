@@ -2,6 +2,8 @@ books:
   css:
     theme:
       css/books.module.css: { minified: true }
+  js:
+    js/loadBooks.js: {}
   dependencies:
     - core/jquery
     - core/drupal
