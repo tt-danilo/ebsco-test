@@ -1,21 +1,22 @@
 {{ attach_library('books/books') }}
 {{ attach_library('books/loadBooks') }}
 
-<div class="container" onload="loadData()">
+<div class="container">
   <div class="filter-container">
-    <input class="search-input"/>
+    <div class="search-container">
+      <input type="text" class="search-input" aria-label="search input">
+      <button id="search-button" class="search-button" type="button"> Search </button>
+    </div>
 
-    <select id="view-select" class="select-input" onchange={onChangeView()}>
-      <option value="card">Card</option>
-      <option value="list">List</option>
+
+    <select id="view-select" class="select-input" onchange={onChangeView()} aria-label="change view">
+      <option aria-label="card view" value="card">Card</option>
+      <option aria-label="list view" value="list">List</option>
     </select>
 
   </div>
 
   <div id='item-view' class="card-view">
-  {% for article in items %}
-    <div class="card-item" >{{ article.name }}</div>
-  {% endfor %}
   </div>
 </div>
 
@@ -23,6 +24,7 @@
   function onChangeView() {
     var ChangeViewInput = document.getElementById("view-select");
     var ItemContainer = document.getElementById("item-view");
-    ItemContainer.className = `${ChangeViewInput.value}-view`
+    console.log(ChangeViewInput.value);
+    ItemContainer.className = `${ChangeViewInput.value}-view`;
   }
 </script>

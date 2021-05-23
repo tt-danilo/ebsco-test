@@ -21,7 +21,9 @@
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
         "drupal/core-vendor-hardening": "^9.1",
-        "drupal/scss_compiler": "^1.1"
+        "drupal/fontawesome": "^2.18",
+        "drupal/scss_compiler": "^1.1",
+        "drush/drush": "^10.5"
     },
     "conflict": {
         "drupal/drupal": "*"
