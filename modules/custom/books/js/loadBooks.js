@@ -24,7 +24,18 @@
             return response.json();
           })
           .then(function (json) {
+            console.log();
+            // Check if items are returned if not. Add blank label
+            if (json.items == undefined && !$(".item-blank-label")[0]) {
+              $(
+                '<div class="item-blank-label" aria-label="No items available">No Items are available.</div>'
+              ).appendTo("#item-view");
+              return;
+            }
+
             var items = json.items.slice(0, 8);
+            $(".item-blank-label").remove();
+
             items.forEach((item) => {
               $(
                 '<div class="card-item" id=' +
