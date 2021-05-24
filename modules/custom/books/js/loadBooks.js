@@ -10,7 +10,9 @@
       $("#search-button")
         .unbind()
         .click(function () {
+          $('<div class="loader"></div>').appendTo("#container");
           $(".card-item").remove();
+          $(".item-blank-label").remove();
           loadData();
         });
 
@@ -24,7 +26,7 @@
             return response.json();
           })
           .then(function (json) {
-            console.log();
+            $(".loader").remove();
             // Check if items are returned if not. Add blank label
             if (json.items == undefined && !$(".item-blank-label")[0]) {
               $(
