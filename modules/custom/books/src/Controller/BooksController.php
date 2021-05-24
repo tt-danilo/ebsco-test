@@ -6,8 +6,8 @@ class BooksController {
 
   public function page() {
     return array(
-      '#theme' => 'article_list',
-      '#title' => 'Our article list',
+      '#theme' => 'books_list',
+      '#title' => 'Books List',
     );
   }
 }

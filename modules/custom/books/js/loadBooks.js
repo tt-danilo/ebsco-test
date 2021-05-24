@@ -3,14 +3,16 @@
     attach: function (context, settings) {
       $(".search-input").keypress(function (e) {
         if (e.which == 13) {
-          $("#search-button").click();
+          $("#search-button").unbind().click();
         }
       });
 
-      $("#search-button").click(function () {
-        $(".card-item").remove();
-        loadData();
-      });
+      $("#search-button")
+        .unbind()
+        .click(function () {
+          $(".card-item").remove();
+          loadData();
+        });
 
       // Load initial Data
       async function loadData() {
@@ -22,10 +24,12 @@
             return response.json();
           })
           .then(function (json) {
-            var item = json.items.slice(0, 8);
-            item.forEach((item) => {
+            var items = json.items.slice(0, 8);
+            items.forEach((item) => {
               $(
-                '<div class="card-item">' +
+                '<div class="card-item" id=' +
+                  item.id +
+                  ">" +
                   '<img alt="book-cover" class="thumbnail" src="' +
                   item.volumeInfo.imageLinks.thumbnail +
                   '">' +
