@@ -17,12 +17,11 @@
         var query = $(".search-input").val();
         var url = "https://www.googleapis.com/books/v1/volumes?q=" + query;
 
-        const fetchData = await fetch(url)
+        await fetch(url)
           .then(function (response) {
             return response.json();
           })
           .then(function (json) {
-            console.log(item);
             var item = json.items.slice(0, 8);
             item.forEach((item) => {
               $(

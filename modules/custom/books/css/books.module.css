@@ -16,7 +16,6 @@
 
 .card-item {
   margin-bottom: 8px;
-  flex: 0 0 80%;
   list-style: none;
   padding: 8px;
   display: flex;
@@ -35,9 +34,11 @@
   border: 1px solid black;
   display: flex;
   align-items: center;
-  padding: 2px;
   border-right: 1px solid black;
   justify-content: space-evenly;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 8px;
 }
 
 .search-input {
@@ -56,6 +57,7 @@
 
 .select-input {
   border-radius: 4px;
+  width: 100%;
 }
 
 .select-input,
@@ -104,10 +106,6 @@
   .filter-container {
     flex-direction: column;
   }
-
-  .search-container {
-    margin-bottom: 8px;
-  }
 }
 
 /* Desktop Styles */
@@ -129,5 +127,15 @@
   .search-input {
     width: 80%;
     margin-bottom: 0px;
+  }
+
+  .select-input {
+    width: unset;
+  }
+
+  .thumbnail {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
   }
 }
